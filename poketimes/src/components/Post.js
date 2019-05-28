@@ -41,7 +41,7 @@ const mapStateToProps = (state, ownProps) => {
 // returns the function prop for dispatch action
 const mapDispatchToProps = dispatch => {
   return {
-    // payload happens to contain type and id fields
+    // action to be dispatched contains type and id fields
     deletePost: id => dispatch({ type: "DELETE_POST", id: id })
   }
 }
